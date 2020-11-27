@@ -363,14 +363,15 @@ img.rect{
 
 .pattern{
      position: absolute;
-     bottom: 3%;
-     right: 54.5%;
+     bottom: 10;
+     left: 175;
      z-index: -1;
 
 }
 
 img.pattern{
-     width: 33%;
+     width: 28.8%;
+     height: auto;
 }
 
 .forumMap{
@@ -378,10 +379,9 @@ img.pattern{
      top: 23%;
      left: 8%;
      z-index: 1;
-     width: 540px;
-     height: 380px;
 
-     @media (max-width:1600px) {
+
+/*      @media (max-width:1600px) {
           width: 540px;
           height: 380px;
      }
@@ -397,7 +397,7 @@ img.pattern{
           margin-bottom:25px;
           margin-left: auto;
           margin-right: auto;
-      }
+      } */
 }
 
 
