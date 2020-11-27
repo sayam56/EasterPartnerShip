@@ -401,7 +401,6 @@ p.description {
 /* ----------------------------------------------------------------------------- */
 section.aboutForumSection {
   position: relative;
-  border: 2px solid red;
   top: 150;
 }
 
@@ -411,17 +410,84 @@ section.aboutForumSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+@media (max-width: 992px) {
+  .aboutForum {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 450px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .image {
   display: relative;
-  border: 2px solid yellow;
   width: 50%;
 }
 
+@media (max-width: 768px) {
+  .image {
+    width: 100%;
+  }
+}
+
 .descBody {
-  border: 2px solid green;
+  position: relative;
   width: 50%;
+  text-align: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px 125px;
+}
+
+@media (max-width: 1600px) {
+  .descBody {
+    padding: 0px 70px;
+  }
+}
+
+@media (max-width: 1500) {
+  .descBody {
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 1333px) {
+  .descBody {
+    padding: 0px 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .descBody {
+    padding: 0px 15px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .descBody {
+    padding: 0px 5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .descBody {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .descBody {
+    width: 100%;
+  }
 }
 
 .rect {
@@ -435,16 +501,92 @@ img.rect {
   width: 14%;
 }
 
-.pattern {
-  position: absolute;
-  bottom: 10;
-  left: 175;
-  z-index: -1;
+@media (max-width: 768px) {
+  img.rect {
+    width: 0%;
+  }
 }
 
-img.pattern {
-  width: 28.8%;
-  height: auto;
+.mobile_pattern img {
+  display: none;
+}
+
+.pattern {
+  position: absolute;
+  top: 28.5%;
+  left: 9.5%;
+  z-index: -1;
+  width: 540;
+  height: 70%;
+}
+
+@media (max-width: 1600px) {
+  .pattern {
+    top: 25.5%;
+    left: 9.5%;
+    width: 520;
+  }
+}
+
+@media (max-width: 1333px) {
+  .pattern {
+    top: 23.5%;
+    left: 9.5%;
+    width: 490;
+    height: 68%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pattern {
+    left: 8%;
+    width: 470px;
+    height: 67%;
+  }
+}
+
+@media (max-width: 1120px) {
+  .pattern {
+    top: 22.5%;
+    left: 8%;
+    width: 450px;
+    height: 67%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .pattern {
+    width: 430px;
+    height: 65%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .pattern {
+    top: 20.5%;
+    left: 8%;
+    width: 400px;
+    height: 62%;
+  }
+}
+
+@media (max-width: 992px) {
+  .pattern {
+    top: 18.5%;
+    left: 8%;
+    width: 380px;
+    height: 60%;
+  }
+}
+
+@media (max-width: 992px) {
+  .pattern {
+    padding: 10px;
+    left: 0;
+    top: 12%;
+    width: 100%;
+    height: 330px;
+  }
 }
 
 .forumMap {
@@ -452,23 +594,174 @@ img.pattern {
   top: 23%;
   left: 8%;
   z-index: 1;
-  /*      @media (max-width:1600px) {
-          width: 540px;
-          height: 380px;
-     }
-     @media (max-width:1200px) {
-          width: 540px;
-          height: 385px;
-     }
-     @media (max-width:1024) {
-          margin-right: 20px;
-     }
-     @media (max-width:768px) {
-          width: auto;
-          margin-bottom:25px;
-          margin-left: auto;
-          margin-right: auto;
-      } */
+  width: 540;
+  height: 70%;
+}
+
+@media (max-width: 1600px) {
+  .forumMap {
+    top: 20%;
+    left: 8%;
+    width: 520;
+  }
+}
+
+@media (max-width: 1333px) {
+  .forumMap {
+    top: 18%;
+    left: 8%;
+    width: 490;
+    height: 68%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .forumMap {
+    width: 470px;
+    height: 67%;
+  }
+}
+
+@media (max-width: 1120px) {
+  .forumMap {
+    top: 17%;
+    left: 8%;
+    width: 450px;
+    height: 67%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .forumMap {
+    width: 430px;
+    height: 65%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .forumMap {
+    top: 15%;
+    left: 8%;
+    width: 400px;
+    height: 62%;
+  }
+}
+
+@media (max-width: 992px) {
+  .forumMap {
+    top: 13%;
+    left: 8%;
+    width: 380px;
+    height: 60%;
+  }
+}
+
+@media (max-width: 992px) {
+  .forumMap {
+    padding: 10px;
+    left: 1%;
+    top: 2%;
+    width: 98%;
+    height: 350px;
+  }
+}
+
+.descBody .headerArea h5.title {
+  text-align: left;
+}
+
+@media (max-width: 992px) {
+  .descBody .headerArea h5.title {
+    margin-top: 450px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 890px) {
+  .descBody .headerArea h5.title {
+    font-size: 16px;
+  }
+}
+
+h1.titleHeading {
+  font-size: 40px;
+  color: #223F78;
+  max-width: 540px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  h1.titleHeading {
+    text-align: center;
+    max-width: 900;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 890px) {
+  h1.titleHeading {
+    text-align: center;
+    font-size: 30px;
+    max-width: 700;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  h1.titleHeading {
+    text-align: center;
+    max-width: 400;
+  }
+}
+
+.descArea p.bodyDesc {
+  font-size: 16;
+  color: black;
+  line-height: 24px;
+  max-width: 540px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .descArea p.bodyDesc {
+    max-width: none;
+    padding: 0px 60px;
+  }
+}
+
+@media (max-width: 895px) {
+  .descArea p.bodyDesc {
+    max-width: none;
+    padding: 0px 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .descArea p.bodyDesc {
+    max-width: 550;
+    padding: 0px 50px;
+  }
+}
+
+.descArea a {
+  text-align: center;
+  font-size: 16;
+  text-decoration: underline;
+  padding: 0px 60px;
+  overflow-wrap: wrap;
+  -webkit-text-decoration-color: #2F5BEA;
+          text-decoration-color: #2F5BEA;
+}
+
+@media (max-width: 992px) {
+  .descArea a {
+    text-align: center;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* ----------------------------------------------------------------------------- */
