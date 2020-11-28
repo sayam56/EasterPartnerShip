@@ -29,12 +29,44 @@
 			</h1>
 
 			<p class="subTitle">
-				We all will meet in Vilnius on 17-20 June 2019!
+				We all will meet in Vilnius on 17-20 June 2021!
 			</p>
 			<!-- <img src="images/widget.png" alt="widget" class="widgetImg"> -->
 			<div class="counter">
 				<div class="yellowBar"></div>
 				<div class="remainingTime">REMAINING TIME</div>
+				<div class="dots">
+					<span class="firstDot">:</span>
+					<span class="secondDot">:</span>
+					<span class="thirdDot">:</span>
+				</div>
+				<div class="timer">
+					<div>
+						<span class="days" id="days"></span>
+						<h4>Days</h4>
+					</div>
+					<div>
+						<span class="hours" id="hours"></span>
+						<h4>Hours</h4>
+					</div>
+					<div>
+						<span class="mins" id="mins"></span>
+						<h4>Minutes</h4>
+					</div>
+					<div>
+						<span class="seconds" id="seconds"></span>
+						<h4>Seconds</h4>
+					</div>
+					
+
+					<span class="mins" id="mins">
+
+					</span>
+					
+
+					</span>
+				</div>
+
 			</div>
 		</div> <!-- CONTAINER ENDS	 -->
 	</section>
@@ -162,7 +194,7 @@
 				<div class="descArea">
 					<p class="bodyDesc">The official name of the country is the Republic of Lithuania. Lithuania is situated on the eastern shore of the Baltic Sea and borders Latvia on the north, Belarus on the east and south, and Poland and the Kaliningrad region of Russia on the southwest. The official language is Lithuanian.
 						Vilnius is the capital of Lithuania and its largest city. It is known for its baroque architecture, seen especially in its medieval old town. </p>
-					<a href="#" class="link">Find out more →</a>
+					<a href="https://en.wikipedia.org/wiki/Lithuania" target="_blank" class="link">Find out more →</a>
 				</div>
 				
 
@@ -271,29 +303,37 @@
 </html>
 
 <script>
-/* 	console.log(window.innerWidth);
-	if(window.innerWidth == 768){
-		console.log("we are here");
-	} */
+	// Set the date we're counting down to
+	var countDownDate = new Date("Jun 5, 2021 15:37:25").getTime();
+	
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+	
+	  // Get today's date and time
+	  var now = new Date().getTime();
+	
+	  // Find the distance between now and the count down date
+	  var distance = countDownDate - now;
+	
+	  // Time calculations for days, hours, minutes and seconds
+	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	
+	  // Display the result in the element with id="demo"
+	 /*  document.getElementById("countDown").innerHTML = days + " : " + hours + " : "
+	  + minutes + " : " + seconds + ""; */
 
-/* 	$(function() {
-    $(window).on('resize', function(e) {
-        var x = $(this).width(),    //  variable for window width assigned to `x`
-            y = $(this).height();   //  variable for window height assigned to `y`
-         if(x <= 768){
-		var elem = document.getElementById('firstId');
-		var elem2 = document.getElementById('secondId');
-		elem.classList.remove("top");
-		elem2.classList.remove("bottom");
-		console.log("removed");
-	    }
-	    if(x>768){
-		var elem = document.getElementById('firstId');
-		var elem2 = document.getElementById('secondId');
-		elem.classList.add("top");
-		elem2.classList.add("bottom");
-		console.log("added");
-	    }
-    });
-}) */
-</script>
+	  document.getElementById("days").innerHTML = days+'';
+	  document.getElementById("hours").innerHTML = hours+'';
+	  document.getElementById("mins").innerHTML = minutes+'';
+	  document.getElementById("seconds").innerHTML = seconds;
+	
+	  // If the count down is finished, write some text
+	  if (distance < 0) {
+	    clearInterval(x);
+	    document.getElementById("demo").innerHTML = "EXPIRED";
+	  }
+	}, 1000);
+	</script>

@@ -223,6 +223,135 @@ img.heroMobileBG {
   }
 }
 
+.timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  font-size: 70px;
+  margin-left: 4%;
+  margin-top: -60px;
+  color: #223F78;
+}
+
+@media (max-width: 1333px) {
+  .timer {
+    margin-top: -62px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .timer {
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timer {
+    margin-top: -62px;
+  }
+}
+
+.timer p {
+  color: #D7D9E0;
+  font-size: 30px;
+}
+
+.dots {
+  font-size: 30;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  z-index: 2;
+  top: 10;
+  margin-left: auto;
+  margin-right: auto;
+  color: #D7D9E0;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.dots .firstDot {
+  margin-left: 110px;
+}
+
+.dots .secondDot {
+  margin-left: -20px;
+}
+
+.dots .thirdDot {
+  margin-right: 80px;
+}
+
+@media (max-width: 1333px) {
+  .dots .firstDot, .dots .secondDot, .dots .thirdDot {
+    margin-top: -15px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .dots .firstDot, .dots .secondDot, .dots .thirdDot {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .dots .firstDot, .dots .secondDot, .dots .thirdDot {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  .dots .firstDot {
+    margin-left: 100px;
+  }
+  .dots .secondDot {
+    margin-left: 00px;
+  }
+  .dots .thirdDot {
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dots .firstDot {
+    margin-left: 90px;
+  }
+  .dots .secondDot {
+    margin-left: -10px;
+  }
+  .dots .thirdDot {
+    margin-right: 50px;
+  }
+}
+
+.names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.timer h4 {
+  font-size: 21px;
+  color: #93B9FF;
+}
+
+@media (max-width: 992px) {
+  .timer h4 {
+    margin-top: -8px;
+  }
+}
+
 .counter {
   background-color: white;
   position: relative;
@@ -1346,9 +1475,21 @@ section.lithuania {
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 768px) {
   .aboutLithuania {
     margin-top: 225px;
+  }
+}
+
+@media (max-width: 640px) {
+  .aboutLithuania {
+    margin-top: 225px;
+  }
+}
+
+@media (max-width: 620px) {
+  .aboutLithuania {
+    margin-top: 235px;
   }
 }
 
@@ -1798,6 +1939,7 @@ section.moderators {
 
 @media (max-width: 768px) {
   .moderatorsClass h1 {
+    line-height: 60px;
     margin-left: auto;
     margin-right: auto;
     max-width: 350px;
@@ -1851,6 +1993,7 @@ section.moderators {
             align-items: center;
     margin-left: 58%;
     margin-right: auto;
+    margin-top: -50px;
   }
 }
 

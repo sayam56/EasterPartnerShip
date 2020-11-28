@@ -141,6 +141,104 @@ img.heroMobileBG{
      display: block;
   }
  }
+
+ .timer{
+     display: flex;
+     justify-content: space-evenly;
+     text-align: center;
+     font-size: 70px;
+     margin-left: 4%;
+     margin-top: -60px;
+     @media (max-width:1333px) {
+          margin-top: -62px;
+     }
+     @media (max-width:1100px) {
+          margin-top: -40px;
+     }
+     @media (max-width:768px) {
+          margin-top: -62px;
+     }
+     color: #223F78;
+ }
+
+ .timer p{
+      color:#D7D9E0;
+      font-size: 30px;
+ }
+ .dots{
+     font-size: 30;
+     position: relative;
+     display: flex;
+     justify-content: space-evenly;
+     z-index:2;
+     top: 10;
+     margin-left: auto;
+     margin-right: auto;
+     color: #D7D9E0;
+     text-align: center;
+     letter-spacing: 10px;
+     .firstDot{
+          margin-left: 110px;
+     }
+     .secondDot{
+          margin-left: -20px;
+     }
+     .thirdDot{
+          margin-right: 80px;
+     }
+     @media (max-width:1333px) {
+          .firstDot, .secondDot, .thirdDot{
+               margin-top: -15px;
+          }
+     }
+     @media (max-width:1100px) {
+          .firstDot, .secondDot, .thirdDot{
+               display: none;
+          }
+     }
+     @media (max-width:768px) {
+          .firstDot, .secondDot, .thirdDot{
+               display: block;
+          }
+     }
+     @media (max-width:700px) {
+          .firstDot{
+               margin-left: 100px;
+          } 
+          .secondDot{
+               margin-left: 00px;
+          }
+          .thirdDot{
+               margin-right: 60px;
+          }
+     }
+     @media (max-width:600px) {
+          .firstDot{
+               margin-left: 90px;
+          } 
+          .secondDot{
+               margin-left: -10px;
+          }
+          .thirdDot{
+               margin-right: 50px;
+          }
+     }
+}
+
+
+
+ .names{
+      display: flex;
+      justify-content: space-evenly;
+      
+ }
+ .timer h4{
+     font-size: 21px;
+     color: #93B9FF;
+     @media (max-width:992px) {
+          margin-top: -8px;
+     }
+ }
 .counter{
      background-color: white;
      position: relative;
@@ -759,6 +857,7 @@ img.rect{
      @media (max-width:890px) {
           font-size: 16px;
      }
+     
 
 }
 
@@ -919,11 +1018,18 @@ section.lithuania{
       @media (max-width:890px) {
           margin-top: 200px;
       }
-      @media (max-width:620px) {
+      @media (max-width:768px) {
           margin-top: 225px;
+      }
+      @media (max-width:640px) {
+          margin-top: 225px;
+      }
+      @media (max-width:620px) {
+          margin-top: 235px;
       }
 
 }
+
 
 
 .aboutLithuania .image{
@@ -1249,6 +1355,7 @@ section.moderators{
      margin-bottom: -50px;
      top: 200;
      @media (max-width:768px) {
+          line-height: 60px;
           margin-left: auto;
           margin-right: auto;
          max-width: 350px;
@@ -1282,7 +1389,8 @@ section.moderators{
           justify-content: center;
           align-items: center;
           margin-left: 58%;
-          margin-right: auto;    
+          margin-right: auto;  
+          margin-top: -50px;  
       }
       @media (max-width:700px) {
 
