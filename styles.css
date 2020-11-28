@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Aileron-bold";
+  src: local("Aileron"), url("font/Aileron-Bold.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aileron-semibold";
+  src: local("Aileron"), url("font/Aileron-SemiBold.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aileron-light";
+  src: local("Aileron"), url("font/Aileron-Light.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aileron-regular";
+  src: local("Aileron"), url("font/Aileron-Regular.otf") format("opentype");
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +32,7 @@
 body {
   overflow-x: hidden;
   /*to keep from flowing out vertically*/
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Aileron-regular";
   overflow-x: hidden;
 }
 
@@ -40,6 +64,7 @@ h1.title, p.subTitle {
 }
 
 h1.title {
+  font-family: "Aileron-bold";
   position: relative;
   font-size: 48px;
   color: white;
@@ -126,6 +151,7 @@ h1.title {
 }
 
 p.subTitle {
+  font-family: "Aileron-semibold";
   font-size: 18;
   position: relative;
   top: 224;
@@ -224,6 +250,7 @@ img.heroMobileBG {
 }
 
 .timer {
+  font-family: "Aileron-light";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,11 +280,6 @@ img.heroMobileBG {
   .timer {
     margin-top: -62px;
   }
-}
-
-.timer p {
-  color: #D7D9E0;
-  font-size: 30px;
 }
 
 .dots {
@@ -342,6 +364,7 @@ img.heroMobileBG {
 }
 
 .timer h4 {
+  font-family: "Aileron-bold";
   font-size: 21px;
   color: #93B9FF;
 }
@@ -488,6 +511,7 @@ img.heroMobileBG {
 }
 
 .remainingTime {
+  font-family: "Aileron-semibold";
   padding: 36px;
   font-size: 14;
   position: relative;
@@ -505,6 +529,7 @@ section.objective {
 }
 
 h1.subtitle, h5.title {
+  font-family: "Aileron-bold";
   text-align: center;
 }
 
@@ -648,6 +673,7 @@ h1.subtitle {
 }
 
 .content p {
+  font-family: "Aileron-regular";
   margin-top: 35px;
   text-align: left;
   -webkit-box-align: start;
@@ -895,17 +921,20 @@ img.mobileNumberBG {
 }
 
 h1.numberTitle {
+  font-family: "Aileron-light";
   color: #223F78;
   font-size: 90px;
 }
 
 h5.headTitle {
+  font-family: "Aileron-bold";
   font-size: 14px;
   color: #223F78;
   letter-spacing: 8px;
 }
 
 p.description {
+  font-family: "Aileron-regular";
   font-size: 14px;
   color: #7E8085;
   max-width: 250px;
@@ -1207,6 +1236,7 @@ img.rect {
 }
 
 .descBody .headerArea h5.title {
+  font-family: "Aileron-bold";
   margin-top: 130px;
   text-align: left;
 }
@@ -1237,6 +1267,7 @@ img.rect {
 }
 
 h1.titleHeading {
+  font-family: "Aileron-bold";
   font-size: 40px;
   color: #223F78;
   max-width: 540px;
@@ -1332,6 +1363,7 @@ h1.titleHeading {
 }
 
 .descArea p.bodyDesc {
+  font-family: "Aileron-regular";
   font-size: 16;
   color: black;
   line-height: 24px;
@@ -1361,6 +1393,7 @@ h1.titleHeading {
 }
 
 .descArea a {
+  font-family: "Aileron-bold";
   text-align: left;
   font-size: 16;
   text-decoration: underline;
@@ -1931,6 +1964,7 @@ section.moderators {
 }
 
 .moderatorsClass h1 {
+  font-family: "Aileron-bold";
   color: #223F78;
   font-size: 40;
   margin-bottom: -50px;
@@ -2119,6 +2153,7 @@ section.organSection {
 }
 
 .organisers h4.title, .partners h4.title {
+  font-family: "Aileron-bold";
   font-size: 21px;
   margin-bottom: 50px;
   color: #2C2E30;
@@ -2370,14 +2405,6 @@ section.partnerSection {
   margin-left: -200px;
 }
 
-/* 
-
-.partnerLogo img{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-}
- */
 section.partnerSection {
   margin-top: 100px;
   position: relative;
@@ -2397,20 +2424,6 @@ section.partnerSection {
     top: -60;
     height: auto;
   }
-}
-
-.top, .bottom {
-  margin-bottom: 80px;
-}
-
-.partners .top img, .partners .bottom img {
-  width: auto;
-  height: auto;
-  margin-bottom: 50px;
-}
-
-.bottom {
-  margin-top: -50px;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------- */
@@ -2438,6 +2451,8 @@ footer {
 }
 
 .footerArea {
+  font-family: "Aileron-bold";
+  font-size: 14;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
