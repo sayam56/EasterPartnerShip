@@ -667,7 +667,20 @@ img.rect {
 }
 
 .descBody .headerArea h5.title {
+  margin-top: 130px;
   text-align: left;
+}
+
+@media (max-width: 1333px) {
+  .descBody .headerArea h5.title {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .descBody .headerArea h5.title {
+    margin-top: 100px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -746,10 +759,9 @@ h1.titleHeading {
 }
 
 .descArea a {
-  text-align: center;
+  text-align: left;
   font-size: 16;
   text-decoration: underline;
-  padding: 0px 60px;
   overflow-wrap: wrap;
   -webkit-text-decoration-color: #2F5BEA;
           text-decoration-color: #2F5BEA;
@@ -757,6 +769,7 @@ h1.titleHeading {
 
 @media (max-width: 992px) {
   .descArea a {
+    padding: 0px 60px;
     text-align: center;
     max-width: none;
     margin-left: auto;
@@ -765,4 +778,782 @@ h1.titleHeading {
 }
 
 /* ----------------------------------------------------------------------------- */
+section.lithuania {
+  position: relative;
+  top: 250;
+  background-color: #F6F8F9;
+  height: 650px;
+  border: 2px solid transparent;
+}
+
+@media (max-width: 1600px) {
+  section.lithuania {
+    height: 600px;
+  }
+}
+
+@media (max-width: 1333px) {
+  section.lithuania {
+    height: 580px;
+  }
+}
+
+@media (max-width: 1100px) {
+  section.lithuania {
+    height: 565px;
+  }
+}
+
+@media (max-width: 992px) {
+  section.lithuania {
+    position: relative;
+    height: 750px;
+    top: 450;
+  }
+}
+
+@media (max-width: 768px) {
+  section.lithuania {
+    height: 750px;
+    top: 500;
+  }
+}
+
+@media (max-width: 620px) {
+  section.lithuania {
+    height: 750px;
+    top: 520;
+  }
+}
+
+@media (max-width: 545px) {
+  section.lithuania {
+    height: 750px;
+    top: 550;
+  }
+}
+
+@media (max-width: 400px) {
+  section.lithuania {
+    top: 600;
+  }
+}
+
+.aboutLithuania {
+  width: 100%;
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+@media (max-width: 992px) {
+  .aboutLithuania {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 450px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 250px;
+  }
+}
+
+@media (max-width: 620px) {
+  .aboutLithuania {
+    margin-top: 270px;
+  }
+}
+
+.aboutLithuania .image {
+  position: relative;
+  text-align: center;
+  width: 50%;
+}
+
+.aboutLithuania .image .lithuaniaPic {
+  position: relative;
+  top: 15%;
+  left: -8%;
+  z-index: 2;
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 1600px) {
+  .aboutLithuania .image .lithuaniaPic {
+    top: 18%;
+    left: -6%;
+    width: 520;
+  }
+}
+
+@media (max-width: 1333px) {
+  .aboutLithuania .image .lithuaniaPic {
+    top: 18%;
+    left: -6%;
+    width: 490;
+    height: 68%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .aboutLithuania .image .lithuaniaPic {
+    width: 470px;
+    height: 67%;
+  }
+}
+
+@media (max-width: 1120px) {
+  .aboutLithuania .image .lithuaniaPic {
+    top: 15%;
+    left: -4%;
+    height: 67%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .aboutLithuania .image .lithuaniaPic {
+    height: 65%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .aboutLithuania .image .lithuaniaPic {
+    top: 13%;
+    left: -4%;
+    width: 460px;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutLithuania .image .lithuaniaPic {
+    margin-top: 420px;
+    padding: 10px;
+    top: 70%;
+    left: -20%;
+    width: 650px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 890px) {
+  .aboutLithuania .image .lithuaniaPic {
+    top: 65%;
+    left: -14%;
+    width: 550px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutLithuania .image .lithuaniaPic {
+    top: 67%;
+    left: -40%;
+    width: 650px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 710px) {
+  .aboutLithuania .image .lithuaniaPic {
+    left: -40%;
+    width: 600px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 670px) {
+  .aboutLithuania .image .lithuaniaPic {
+    top: 71.5%;
+  }
+}
+
+@media (max-width: 680px) {
+  .aboutLithuania .image .lithuaniaPic {
+    left: -40%;
+    width: 600px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 650px) {
+  .aboutLithuania .image .lithuaniaPic {
+    left: -40%;
+    width: 570px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 620px) {
+  .aboutLithuania .image .lithuaniaPic {
+    left: -45%;
+    width: 550px;
+    height: 340px;
+  }
+}
+
+.aboutLithuania .image .pattern {
+  position: absolute;
+  top: 19.5%;
+  left: 16.5%;
+  z-index: 1;
+  width: 540px;
+  height: auto;
+}
+
+@media (max-width: 1700px) {
+  .aboutLithuania .image .pattern {
+    top: 22%;
+    left: 15.5%;
+    width: 520;
+  }
+}
+
+@media (max-width: 1600px) {
+  .aboutLithuania .image .pattern {
+    top: 22%;
+    left: 14%;
+    width: 520;
+  }
+}
+
+@media (max-width: 1333px) {
+  .aboutLithuania .image .pattern {
+    top: 23.5%;
+    left: 10.5%;
+    width: 490;
+    height: 68%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .aboutLithuania .image .pattern {
+    top: 23.5%;
+    left: 8.5%;
+    width: 470px;
+    height: 67%;
+  }
+}
+
+@media (max-width: 1120px) {
+  .aboutLithuania .image .pattern {
+    top: 20.5%;
+    left: 8%;
+    height: 67%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .aboutLithuania .image .pattern {
+    top: 20.5%;
+    left: 6.5%;
+    height: 65%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .aboutLithuania .image .pattern {
+    top: 18.5%;
+    left: 6.5%;
+    width: 460px;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutLithuania .image .pattern {
+    margin-top: 420px;
+    padding: 10px;
+    top: 80%;
+    left: -22.5%;
+    width: 680px;
+    height: 330px;
+  }
+}
+
+@media (max-width: 890px) {
+  .aboutLithuania .image .pattern {
+    top: 75%;
+    left: -17.5%;
+    width: 580px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutLithuania .image .pattern {
+    top: 75%;
+    left: -44%;
+    width: 680px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 710px) {
+  .aboutLithuania .image .pattern {
+    left: -44%;
+    width: 630px;
+    height: 340px;
+  }
+}
+
+@media (max-width: 680px) {
+  .aboutLithuania .image .pattern {
+    left: -44%;
+    width: 625px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 670px) {
+  .aboutLithuania .image .pattern {
+    top: 78%;
+    left: -44%;
+    width: 625px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 650px) {
+  .aboutLithuania .image .pattern {
+    top: 78%;
+    left: -44%;
+    width: 595px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 620px) {
+  .aboutLithuania .image .pattern {
+    top: 77%;
+    left: -47.5%;
+    width: 570px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutLithuania .descBody .headerArea {
+    position: relative;
+    top: -380;
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutLithuania .descBody .headerArea {
+    position: relative;
+    top: -410;
+    left: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .aboutLithuania .descBody .headerArea {
+    position: relative;
+    top: -400;
+    left: 0;
+  }
+}
+
+@media (max-width: 670px) {
+  .aboutLithuania .descBody .headerArea {
+    position: relative;
+    top: -360;
+    left: 0;
+  }
+}
+
+@media (max-width: 525px) {
+  .aboutLithuania .descBody .headerArea {
+    position: relative;
+    top: -340;
+    left: 0;
+  }
+}
+
+@media (max-width: 522px) {
+  .aboutLithuania .descBody .headerArea {
+    position: relative;
+    top: -340;
+    left: 0;
+  }
+}
+
+@media (max-width: 505px) {
+  .aboutLithuania .descBody .headerArea {
+    position: relative;
+    top: -320;
+    left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .aboutLithuania .descBody .headerArea {
+    position: relative;
+    top: -300;
+    left: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutLithuania .descBody .descArea {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 890px) {
+  .aboutLithuania .descBody .descArea {
+    margin-top: -15px;
+  }
+}
+
+/* ----------------------------------------------------------------------------- */
+section.overLappingTriangles {
+  position: relative;
+  top: 150;
+}
+
+@media (max-width: 992px) {
+  section.overLappingTriangles {
+    display: none;
+  }
+}
+
+.overlappingBG img {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+section.moderators {
+  position: relative;
+  top: -450;
+}
+
+@media (max-width: 1333px) {
+  section.moderators {
+    top: -400;
+  }
+}
+
+@media (max-width: 1200px) {
+  section.moderators {
+    top: -350;
+  }
+}
+
+@media (max-width: 1080px) {
+  section.moderators {
+    top: -320;
+  }
+}
+
+@media (max-width: 992px) {
+  section.moderators {
+    top: 300;
+  }
+}
+
+@media (max-width: 768px) {
+  section.moderators {
+    top: 350;
+  }
+}
+
+.moderatorsClass h1 {
+  color: #223F78;
+  font-size: 40;
+  margin-bottom: -50px;
+}
+
+@media (max-width: 768px) {
+  .moderatorsClass h1 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 350px;
+    font-size: 30;
+  }
+}
+
+.modImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 300;
+}
+
+@media (max-width: 768px) {
+  .modImages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: center;
+    height: auto;
+    width: 315px;
+  }
+}
+
+.modImages img {
+  margin-right: 50px;
+  z-index: 2;
+}
+
+@media (max-width: 992px) {
+  .modImages img {
+    margin-right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .modImages img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 58%;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .modImages img {
+    margin-left: 50%;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 655px) {
+  .modImages img {
+    margin-left: 40%;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .modImages img {
+    margin-left: 30%;
+    margin-right: auto;
+  }
+}
+
+.mobileImage {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobileImage {
+    display: block;
+  }
+}
+
+.modLink {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .modLink {
+    display: block;
+  }
+}
+
+a.modLink {
+  position: relative;
+  text-align: center;
+  font-size: 16;
+  text-decoration: underline;
+  overflow-wrap: wrap;
+  -webkit-text-decoration-color: #2F5BEA;
+          text-decoration-color: #2F5BEA;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100;
+}
+
+.mobileImage img {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+section.overlappingBG2 {
+  margin-top: -740px;
+  position: relative;
+  top: 150;
+}
+
+@media (max-width: 992px) {
+  section.overlappingBG2 {
+    top: 750;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  section.overlappingBG2 {
+    top: -60;
+    height: auto;
+  }
+  section.overlappingBG2 .desktopImage {
+    display: none;
+  }
+}
+
+.overlappingBG2 img {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+/* ------------------------------------------------------------------------------------ */
+section.organSection {
+  margin-top: 100px;
+  position: relative;
+  top: 150;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  section.organSection {
+    top: 750;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  section.organSection {
+    top: -60;
+    height: auto;
+  }
+}
+
+.organisers h4.title, .partners h4.title {
+  font-size: 21px;
+  margin-bottom: 50px;
+  color: #2C2E30;
+}
+
+.organImages, .top, .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .organImages, .top, .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+  }
+}
+
+.organImages img {
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .organImages img {
+    margin-top: 50px;
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+section.partnerSection {
+  margin-top: 100px;
+  position: relative;
+  top: 150;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  section.partnerSection {
+    top: 750;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  section.partnerSection {
+    top: -60;
+    height: auto;
+  }
+}
+
+.top, .bottom {
+  margin-bottom: 80px;
+}
+
+.partners .top img, .partners .bottom img {
+  width: auto;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.bottom {
+  margin-top: -50px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+footer {
+  position: relative;
+  top: 150;
+  height: 85px;
+  width: 100%;
+}
+
+.footerArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.copyright {
+  margin-left: 120px;
+}
+
+.footerLinks {
+  margin-right: 120px;
+}
+
+.footerLinks a .firstFooterLink {
+  margin-right: 20px;
+}
 /*# sourceMappingURL=styles.css.map */
