@@ -1171,17 +1171,34 @@ section.lithuania{
      } 
      @media (max-width:768px) {
           margin-top: -15px;
-     } 
-     @media (max-width:522px) {
-
-     }  
-     @media (max-width:505px) {
-
-     } 
-     @media (max-width:400px) {
-
      }
 
+}
+
+.aboutLithuania .descBody{
+     position: relative;
+
+     width: 50%;
+     text-align: left;
+     align-items: flex-start;
+     padding: 0px 125px;
+
+     @media (max-width:1200px) {
+          padding: 0px 30px;
+     }
+     @media (max-width:1100px) {
+          padding: 0px 30px;
+     }
+     @media (max-width:1060px) {
+
+     }
+     @media (max-width:992px) {
+          width: 100%;
+     }
+     @media (max-width:768px) {
+          width: 100%;
+
+      }
 }
 
 
@@ -1405,6 +1422,168 @@ section.partnerSection{
       }
 }
 
+.partners{
+     margin-bottom: 50px;
+}
+/*   */
+     .partnerLogo{
+          display: grid;
+          text-align: center;
+          align-items: center;
+          justify-items: center;
+          grid-template-areas: 
+          ". logo1 logo2 logo3 logo4 logo5 ."
+          ". logo6 logo6 logo7 logo8 logo9 .";
+          column-gap: 50px;
+          row-gap: 8vw;
+          @media (max-width: 1666px ) {
+               grid-template-areas: 
+               "logo1 logo2 logo3 logo4 logo5"
+               "logo6 logo6 logo7 logo8 logo9";
+               column-gap: 10px;
+               
+          }
+          @media (max-width: 1395px) {
+               column-gap: 10px;
+               .partners1, .partners2, .partners3, .partners4,
+               .partners5, .partners6, .partners7, .partners8, .partners9{
+                    padding: 0px 0px;
+               }
+          }
+          @media(max-width: 768px){
+               column-gap: 20px;
+               row-gap: 5px;
+               grid-template-areas: 
+               "logo1 logo2"
+               "logo3 logo5"
+               "logo7 logo4"
+               "logo6 logo6"
+               "logo8 logo9";
+               align-items: center;
+               .partners1{
+                    grid-area: logo1;
+                    padding: 0px 0px;
+                    margin-left: 0px;
+                    width: 60%;
+          
+               }
+               .partners2{
+                    grid-area: logo2;
+                    padding: 0px 0px;
+                    width: 100%;
+               }
+               .partners3{
+                    grid-area: logo3;
+                    padding: 0px 0px;
+                    padding-left: 50px;
+                    width: 120%;
+                    margin-right: -25px;
+               }
+               .partners4{
+                    grid-area: logo4;
+                    width: 100%;
+                    padding: 0px 0px;
+                    margin-left: -50px;
+                    width: 100%;
+               }
+               .partners5{
+                    grid-area: logo5;
+                    padding: 0px 0px;
+                    margin-right: 0px;
+                    margin-left: -5px;
+                    width: 35%;
+               }
+               .partners6{
+                    grid-area: logo6;
+                    margin-left: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 70%;
+               }
+               .partners7{
+                    grid-area: logo7;
+                    margin-left: 0px;
+                    width: 70%;
+               }
+               .partners8{
+                    grid-area: logo8;
+                    margin-left: 0px;
+                    width: 50%;
+                    margin-top: 25px;
+               }
+               .partners9{
+                    grid-area: logo9;
+                    margin-top: 25px;
+                    margin-left: -70px;
+                    width: 100%;
+               }
+          
+          }
+     }
+     .partners1{
+          grid-area: logo1;
+          padding: 0px 50px;
+          margin-left: 3vw;
+
+     }
+     .partners2{
+          grid-area: logo2;
+          padding: 0px 50px;
+     }
+     .partners3{
+          grid-area: logo3;
+          padding: 0px 50px;
+     }
+     .partners4{
+          grid-area: logo4;
+          padding: 0px 50px;
+     }
+     .partners5{
+          grid-area: logo5;
+          padding: 0px 50px;
+          margin-right: 50px;
+     }
+     .partners6{
+          grid-area: logo6;
+          margin-left: -150px;
+     }
+     .partners7{
+          grid-area: logo7;
+          margin-left: -350px;
+     }
+     .partners8{
+          grid-area: logo8;
+          margin-left: -350px;
+     }
+     .partners9{
+          grid-area: logo9;
+          margin-left: -200px;
+     }
+
+/* 
+
+.partnerLogo img{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+ */
+section.partnerSection{
+     margin-top: 100px;
+     position: relative;
+     top: 150;
+     text-align: center;
+
+     @media (max-width:992px) {
+          top: 750;
+          height: auto;
+      }
+      @media (max-width:768px) {
+          top: -60;
+          height: auto;
+      }
+}
+
 .top, .bottom{
      margin-bottom: 80px;
 }
@@ -1425,11 +1604,10 @@ footer{
      top: 150;
      height: 85px;
      width: 100%;
-     margin-top: -85px;
+/*      margin-top: -85px; */
      @media (max-width:992px) {
           top: 750;
           height: 75px;
-          margin-top: -75px;
       }
       @media (max-width:768px) {
           top: 0;
