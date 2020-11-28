@@ -1529,6 +1529,23 @@ footer {
   top: 150;
   height: 85px;
   width: 100%;
+  margin-top: -85px;
+}
+
+@media (max-width: 992px) {
+  footer {
+    top: 750;
+    height: 75px;
+    margin-top: -75px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    top: 0;
+    height: 75px;
+    margin-top: -75px;
+  }
 }
 
 .footerArea {
