@@ -1,24 +1,24 @@
 @font-face {
   font-family: "Aileron-bold";
-  src: local("Aileron"), url("./Font/Aileron-Bold.otf") format("opentype");
+  src: local("Aileron"), url("Font/Aileron-Bold.otf");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Aileron-semibold";
-  src: local("Aileron"), url("./Font/Aileron-SemiBold.otf") format("opentype");
+  src: local("Aileron"), url("Font/Aileron-SemiBold.otf");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Aileron-light";
-  src: local("Aileron"), url("./Font/Aileron-Light.otf") format("opentype");
+  src: local("Aileron"), url("Font/Aileron-Light.otf");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Aileron-regular";
-  src: local("Aileron"), url("./Font/Aileron-Regular.otf") format("opentype");
+  src: local("Aileron"), url("Font/Aileron-Regular.otf");
   font-display: swap;
 }
 
