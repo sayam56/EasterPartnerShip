@@ -1,24 +1,24 @@
 @font-face {
   font-family: "Aileron-bold";
-  src: local("Aileron"), url("font/Aileron-Bold.otf") format("opentype");
+  src: local("Aileron"), url("./Font/Aileron-Bold.otf") format("opentype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Aileron-semibold";
-  src: local("Aileron"), url("font/Aileron-SemiBold.otf") format("opentype");
+  src: local("Aileron"), url("./Font/Aileron-SemiBold.otf") format("opentype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Aileron-light";
-  src: local("Aileron"), url("font/Aileron-Light.otf") format("opentype");
+  src: local("Aileron"), url("./Font/Aileron-Light.otf") format("opentype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Aileron-regular";
-  src: local("Aileron"), url("font/Aileron-Regular.otf") format("opentype");
+  src: local("Aileron"), url("./Font/Aileron-Regular.otf") format("opentype");
   font-display: swap;
 }
 
@@ -2227,7 +2227,8 @@ section.partnerSection {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-      grid-template-areas: ". logo1 logo2 logo3 logo4 logo5 ." ". logo6 logo6 logo7 logo8 logo9 .";
+      grid-template-areas: ". logo1 logo2 logo3 logo4 logo5 ."
+ ". logo6 logo6 logo7 logo8 logo9 .";
   -webkit-column-gap: 50px;
           column-gap: 50px;
   row-gap: 8vw;
@@ -2235,7 +2236,8 @@ section.partnerSection {
 
 @media (max-width: 1666px) {
   .partnerLogo {
-        grid-template-areas: "logo1 logo2 logo3 logo4 logo5" "logo6 logo6 logo7 logo8 logo9";
+        grid-template-areas: "logo1 logo2 logo3 logo4 logo5"
+ "logo6 logo6 logo7 logo8 logo9";
     -webkit-column-gap: 10px;
             column-gap: 10px;
   }
@@ -2257,7 +2259,11 @@ section.partnerSection {
     -webkit-column-gap: 20px;
             column-gap: 20px;
     row-gap: 5px;
-        grid-template-areas: "logo1 logo2" "logo3 logo5" "logo7 logo4" "logo6 logo6" "logo8 logo9";
+        grid-template-areas: "logo1 logo2"
+ "logo3 logo5"
+ "logo7 logo4"
+ "logo6 logo6"
+ "logo8 logo9";
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
